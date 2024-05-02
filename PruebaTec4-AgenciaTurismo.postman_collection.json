@@ -1,0 +1,1605 @@
+{
+	"info": {
+		"_postman_id": "52c244ae-60e2-4320-80e1-0c9f5e616940",
+		"name": "PruebaTec4-AgenciaTurismo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10353761"
+	},
+	"item": [
+		{
+			"name": "UserStory",
+			"item": [
+				{
+					"name": "UserStory 7",
+					"item": [
+						{
+							"name": "Hotels",
+							"item": [
+								{
+									"name": "POST",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"hotelCode\": \"AR-0002\",\r\n    \"name\": \"Atlantis Resort\",\r\n    \"place\": \"Miami\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/agency/hotels/new",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"hotels",
+												"new"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PUT",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"hotelCode\": \"AR-0003\",\r\n    \"name\": \"Atlantis Resort 2\",\r\n    \"place\": \"Madrid\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/agency/hotels/edit/AR-0003",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"hotels",
+												"edit",
+												"AR-0003"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DELETE",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/hotels/delete/AR-0003",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"hotels",
+												"delete",
+												"AR-0003"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET by Id",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/hotels/AR-0002",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"hotels",
+												"AR-0002"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/hotels",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"hotels"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Flights",
+							"item": [
+								{
+									"name": "POST",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"flightCode\": \"MIBA-1235\",\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"flightPrice\": 500.00,\r\n    \"seatsQ\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/agency/flights/new",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"flights",
+												"new"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PUT",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"flightCode\": \"MIBA-1235\",\r\n    \"date\": \"18/10/2024\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"flightPrice\": 600.00,\r\n    \"seatsQ\": 5,\r\n    \"seatsAvailable\": 4,\r\n    \"isComplete\": false \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:8080/agency/flights/edit/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"flights",
+												"edit",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DELETE",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "hackaboss",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/flights/delete/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"flights",
+												"delete",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET by Id",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/flights/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"flights",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET",
+									"request": {
+										"auth": {
+											"type": "noauth"
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/agency/flights/all",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"agency",
+												"flights",
+												"all"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "UserStory 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserStory 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/rooms?dateFrom=2024-05-01&dateTo=2024-05-05&destination=Miami",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2024-05-01"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-05-05"
+								},
+								{
+									"key": "destination",
+									"value": "Miami"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserStory 3",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomType\": \"Single\",\r\n    \"peopleQ\": 1,\r\n    \"dateFrom\": \"2024-05-01\",\r\n    \"dateTo\": \"2024-05-05\",\r\n    \"place\": \"Miami\",\r\n    \"hosts\": [\r\n        {\r\n            \"dni\": \"11111111D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserStory 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agency/flights/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserStory 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agency/flights?dateFrom=2024-10-18&dateTo=2024-10-18&origin=Miami&destination=Barcelona",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights"
+							],
+							"query": [
+								{
+									"key": "dateFrom",
+									"value": "2024-10-18"
+								},
+								{
+									"key": "dateTo",
+									"value": "2024-10-18"
+								},
+								{
+									"key": "origin",
+									"value": "Miami"
+								},
+								{
+									"key": "destination",
+									"value": "Barcelona"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Story 6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"peopleQ\": 1,\r\n\t\"passengers\": [\r\n        {\r\n            \"dni\": \"33333333D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel",
+			"item": [
+				{
+					"name": "Ver todos los hoteles",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar hotel por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/AR-0003",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"AR-0003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un hotel",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotelCode\": \"AR-0002\",\r\n    \"name\": \"Atlantis Resort\",\r\n    \"place\": \"Miami\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/agency/hotels/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar un hotel",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotelCode\": \"AR-0003\",\r\n    \"name\": \"Atlantis Resort 2\",\r\n    \"place\": \"Madrid\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/hotels/edit/AR-0003",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"edit",
+								"AR-0003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un hotel",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/hotels/delete/AR-0003",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"hotels",
+								"delete",
+								"AR-0003"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flight",
+			"item": [
+				{
+					"name": "Ver todos los vuelos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flights/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar vuelo por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flights/find/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"find",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un vuelo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flightCode\": \"MIBA-1235\",\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"flightPrice\": 650.00,\r\n    \"seatsQ\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/agency/flights/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar un vuelo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"flightCode\": \"MIBA-1235\",\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"flightPrice\": 600.00,\r\n    \"seatsQ\": 5,\r\n    \"seatsAvailable\": 4,\r\n    \"isComplete\": false \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/flights/edit/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"edit",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un vuelo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flights/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flights",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Ver todas las personas",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/persons/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"persons",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar persona por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/persons/11113333D",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"persons",
+								"11113333D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar una persona",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"dni\": \"55555555D\",\r\n\t\"name\": \"Lady\",\r\n    \"lastName\": \"Gaga\",\r\n    \"email\": \"ladygaga@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/persons/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"persons",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar una persona",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Ana Maria J\",\r\n    \"lastName\": \"Lopez\",\r\n    \"email\": \"analopez@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/persons/edit/11113333D",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"persons",
+								"edit",
+								"11113333D"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una persona",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/persons/delete/11113333D",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"persons",
+								"delete",
+								"11113333D"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Agregar una habitacion",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomCode\": \"102D\",\r\n    \"roomType\": \"Double\",\r\n    \"roomPrice\": 80.00,\r\n    \"hotel\": {\r\n        \"hotelCode\": \"AR-0002\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/agency/rooms/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver todas las habitaciones",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agency/rooms/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar habitacion por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agency/rooms/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar una habitacion",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomCode\": \"102D\",\r\n    \"roomType\": \"Double\",\r\n    \"roomPrice\": 70.00,\r\n    \"isBooked\": false,\r\n    \"hotel\": {\r\n        \"hotelCode\": \"AR-0002\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/agency/rooms/edit/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms",
+								"edit",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una habitacion",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/agency/rooms/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"rooms",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RoomBooking",
+			"item": [
+				{
+					"name": "Agregar una roombooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomType\": \"Double\",\r\n    \"peopleQ\": 2,\r\n    \"dateFrom\": \"2024-05-01\",\r\n    \"dateTo\": \"2024-05-03\",\r\n    \"place\": \"Miami\",\r\n    \"hosts\": [\r\n        {\r\n            \"dni\": \"11111111D\"\r\n        },\r\n        {\r\n            \"dni\": \"22222222D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver todas las roombookings",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar roombooking por id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar una roombooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"roomType\": \"Single\",\r\n    \"peopleQ\": 1,\r\n    \"dateFrom\": \"2024-05-01\",\r\n    \"dateTo\": \"2024-05-03\",\r\n    \"place\": \"Miami\",\r\n    \"totalPrice\": 200.0,\r\n    \"nights\": 4,\r\n    \"hosts\": [\r\n        {\r\n            \"dni\": \"11111111D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/edit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"edit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una roombooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/room-booking/delete/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"room-booking",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FlightBooking",
+			"item": [
+				{
+					"name": "Ver todas las flightbookings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar flightbooking por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar una flightbooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Miami\",\r\n    \"destination\": \"Barcelona\",\r\n    \"seatType\": \"Economy\",\r\n    \"peopleQ\": 1,\r\n\t\"passengers\": [\r\n        {\r\n            \"dni\": \"55555555D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar una flightbooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2024-10-18\",\r\n    \"origin\": \"Barcelona\",\r\n    \"destination\": \"Miami\",\r\n    \"seatType\": \"Economy\",\r\n    \"totalPrice\": 650.00,\r\n    \"peopleQ\": 1,\r\n\t\"passengers\": [\r\n        {\r\n            \"dni\": \"11111111D\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/edit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"edit",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar una flightbooking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "hackaboss",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/agency/flight-booking/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"agency",
+								"flight-booking",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
